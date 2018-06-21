@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  /* SLIDER */
   $(document).ready(function () {
     $('.single-item').slick({
       arrows: false,
@@ -10,5 +11,13 @@ $(document).ready(function () {
       autoplay: true,
       autoplaySpeed: 8000
     });
+  });
+
+  /* SCROLL TOP */
+  $('.gotop').click(function (e) {
+    e.preventDefault();
+    $('html').animate({
+      scrollTop: 0
+    }, 800)
   });
 });
