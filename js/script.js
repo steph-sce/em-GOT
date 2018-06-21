@@ -9,7 +9,7 @@ $(document).ready(function () {
       slidesToShow: 1,
       adaptiveHeight: true,
       autoplay: true,
-      autoplaySpeed: 8000
+      autoplaySpeed: 3000
     });
   });
 
