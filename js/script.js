@@ -1,17 +1,5 @@
 $(document).ready(function () {
-  /* SLIDER */
-  $(document).ready(function () {
-    $('.single-item').slick({
-      arrows: false,
-      dots: true,
-      infinite: true,
-      speed: 1000,
-      slidesToShow: 1,
-      adaptiveHeight: true,
-      autoplay: true,
-      autoplaySpeed: 3000
-    });
-  });
+
 
   /* SCROLL TOP */
   $('.gotop').click(function (e) {
@@ -19,5 +7,48 @@ $(document).ready(function () {
     $('html').animate({
       scrollTop: 0
     }, 800)
+  });
+
+  /* TRI PERSONNAGES */
+
+  /* ALL */
+  $('.all').click(function () {
+    $('.targaryen').show();
+    $('.baratheon').show();
+    $('.stark').show();
+    $('.snow').show();
+    $('.lannister').show();
+  });
+
+  /* LANNISTER*/
+  $('.les-lannister').click(function () {
+    $('.targaryen').hide();
+    $('.baratheon').hide();
+    $('.stark').hide();
+    $('.snow').hide();
+  });
+
+  /* TARGARYEN */
+  $('.les-targaryen').click(function () {
+    $('.lannister').hide();
+    $('.baratheon').hide();
+    $('.stark').hide();
+    $('.snow').hide();
+  });
+
+  /* BARATHEON */
+  $('.les-baratheon').click(function () {
+    $('.lannister').hide();
+    $('.targaryen').hide();
+    $('.stark').hide();
+    $('.snow').hide();
+  });
+
+  /* STARK */
+  $('.les-stark').click(function () {
+    $('.lannister').hide();
+    $('.targaryen').hide();
+    $('.baratheon').hide();
+    $('.snow').hide();
   });
 });
